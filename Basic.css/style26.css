@@ -1,0 +1,94 @@
+.para1::first-line {
+    background-color: aqua;
+}
+
+.para2::first-letter {
+    font-size: 30px;
+    background-color: gold;
+}
+
+.para2::selection {
+    background-color: darkgoldenrod;
+}
+
+h3::before {
+    content: '*hello.';
+}
+
+h4::after {
+    content: 'hello*';
+
+}
+
+.fm::after {
+    content: '*';
+    color: red;
+
+}
+
+h1 {
+    background-color: red;
+    text-align: center;
+    text-decoration: dotted;
+}
+
+.box {
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+}
+
+#h1 {
+    text-align: center;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+}
+
+.primary:hover {
+    color: chartreuse;
+    background-color: black;
+
+}
+
+.primary {
+    color: crimson;
+}
+
+.primary:visited {
+    color: orange;
+}
+
+.primary:active {
+    background-color: black;
+    color: wheat;
+    border: 4px solid green;
+}
+
+.primary:link {
+    color: green;
+    padding: 10px;
+}
+
+ul li:first-child {
+    background-color: aqua;
+}
+
+ul li:last-child {
+    background-color: blue;
+}
+
+/* nth chaild mens */
+/* ab+b */
+ul li:nth-child(4) {
+    background-color: chartreuse;
+}
+
+.important::after {
+    content: 'important';
+    color: wheat;
+    background-color: red;
+    padding: 0.7px;
+    font-size: 10px;
+    margin-left: 10px;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Tags</title>
+    <!--above the title bare  in image favirat icon-->
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.d870869e77d40685348bd554d2fc1357?rik=uNavvJd%2bCoJ%2fzg&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f508da03be4b0d28844ddf21c%2f508ed25fe4b044ecf46dfab1%2f5aa00451e2c48331b497515d%2f1520462360524%2fF.jpg%3fformat%3d1500w&ehk=t0TGC4t%2fcm7N21Q%2biBsz8I8kgoojwsHGbWcIauERWD8%3d&risl=&pid=ImgRaw&r=0" type="image/x-icon">
+
+</head>
+<body>
+    <h1>headings:</h1>
+    <!--h1 to h6 thise is a headings the differencs is only sizes-->
+    <h1>hello</h1>
+    <h2>hello</h2>
+    <h3>hello</h3>
+    <h4>hello</h4>
+    <h5>hello</h5>
+    <h6>hello</h6>
+    <!--hr means on horizantal line comming thise is self closing tag-->
+    <hr>
+    <h1>paragraphs:</h1>
+    <!--p tag means a paragraph-->
+    <!--i tag means italic thise is astylesh font style-->
+    <!--u means under line-->
+    <p>Lorem ipsum dolor<i>sit amet consectetur adipisicing</i>  elit. Assumenda nemo rerum eum amet non <u>sapiente aspernatur quam</u>, reiciendis, magnam fugit sequi sint aliquam harum officia minima sed, pariatur eos quod!</p>
+    <hr>
+    <!-- u tag maens underline-->
+    <h1><u>hello world</u></h1>
+    <hr>
+    <!--b=bold or strong means thik colour both are same -->
+    <h1>bold or strong:</h1>
+    <p>Lorem <b>ipsum dolor</b> sit amet <strong>consectetur</strong> adipisicing elit</p>
+    <hr>
+    <h1>anchor tag:</h1>
+    <!--anchor tag means link-->
+    <!--br tag means one line to another line braek br is self closing tag-->
+    <a href="https;//www.google.com" target="_blank"> click me</a><br>
+    <a href="mailto:anc@gmail.com">send me</a><br>
+    <a href="tel:789635826192"> phone number</a><br>
+    <a href="./pdf"> pdfs</a>
+    <hr>
+    <h1>imag tag:</h1>
+    <!--put the imag link-->
+    <img src="https://th.bing.com/th/id/R.d870869e77d40685348bd554d2fc1357?rik=uNavvJd%2bCoJ%2fzg&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f508da03be4b0d28844ddf21c%2f508ed25fe4b044ecf46dfab1%2f5aa00451e2c48331b497515d%2f1520462360524%2fF.jpg%3fformat%3d1500w&ehk=t0TGC4t%2fcm7N21Q%2biBsz8I8kgoojwsHGbWcIauERWD8%3d&risl=&pid=ImgRaw&r=0" alt=" imag">
+    <!--alt means onse image not dispaled alt text is comming-->
+    <hr>
+    <h1>lists:</h1>
+    <!-- lists are three types 
+    1.order list=(1,A,a,i,I)
+    2.unorder list
+    3.descrption list....dt..dd-->
+    <ol>
+        <li type="1">Hello</li>
+        <li type="A">Hello</li>
+        <li type="a">Hello</li>
+        <li type="i">Hello</li>
+        <li type="I">Hello</li>
+    </ol>
+    <ul>
+        <li>Hello</li>
+        <li>konanki</li>
+        <li>world</li>
+    </ul>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HYPER TEXT MARKUP LANGUAGE</dd>
+        <dt>CSS</dt>
+        <dd>CASCADING STYLE SHEET</dd>
+
+    </dl>
+    <hr>
+    <table border="1px">
+        <h1>Tables:</h1>
+    <!--table tags are two types tr inside th is heading
+---------------------------------tr      "     td table data-->
+     <tr>
+        <th>sno</th>
+        <th>name</th>
+        <th>phone no</th>
+     </tr>
+     <tr>
+        <td>1</td>
+        <td>ram</td>
+        <td>985745723</td>
+     </tr>
+     <tr>
+        <td>2</td>
+        <td>tony</td>
+        <td>45947598346</td>
+     </tr>
+
+
+     <tr>
+        <td>3</td>
+        <td>joy</td>
+        <td>3452458348</td>
+     </tr>
+     <!--colspan.colom space.....rowspan.row space-->
+
+    </table>
+    <hr>
+    <form>
+        <h1>Forms:</h1>
+        <!--i/p attributs is name,id,value,number,placeholder..
+       -> label-> for,connected to id
+       -> types of i/p....txt,password,email,number,date, month,color,checkbox,radiobuttons,url,search.....etc
+       -> form validation (size,max,min,max length,min length) thise is read only...
+       ->Fildset is a border of the form
+       ->legend is atext for fieldset
+    -->
+    <div>
+        <label for="iq"> Name*:</label>
+        <input type="text" name="name" id="iq" placeholder="enter a name "></div>
+    <!--div is one continer packeges-->
+    <div><br><hr>
+        <label for="p" >Age:</label>
+        <input type="number" name="num" id="p" maxlength="20" minlength="30">
+        </div>
+        <div><br><hr>
+            <label for="in">Email:</label>
+            <input type="email" name="em" id="in" placeholder="email">
+            <!--placeholder is adefalt text in the box-->
+        </div><br><hr>
+        <div>
+            <label for="of">month</label>
+            <input type="month" name="mn" id="of">
+        </div><br><hr>
+        <div>
+            <label for="li">date</label>
+            <input type="date" name="dt" id="li">
+        </div><br><hr>
+        <div>
+            <label for="lr">colour</label>
+            <input type="color" name="clr" id="lr">
+        </div><br><hr>
+        <div>
+            <label for="ck">Male</label>
+            <input type="checkbox" name="gen" id="ck">
+            <label for="fg">femal</label>
+            <input type="checkbox" name="gen" id="fg">
+        </div><br><hr>
+        <div>            
+            <input type="radio" name="rab" id="rd">
+            <label for="rd">HTML</label>           
+            <input type="radio" name="rab" id="rd">
+            <label for="rd">CSS</label>
+            <input type="radio" name="rab" id="rd">
+            <label for="rd">JS</label>
+            <input type="radio" name="rab" id="rd">
+            <label for="rd">REACT</label>
+            <!--size also menction of the radti buttons-->
+
+        </div><br><hr>
+        <div>
+            <label for="se">search:</label>
+            <input type="search" name="sea" id="se" placeholder="search"><br>
+            <input type="url" name="ul" id="se" placeholder="url">
+        </div><hr><br>
+        <div>
+            <!--videos,autos every one used in sourse-->
+        </div><hr><br>
+        <div>
+            <button>submit</button>
+            <input type="submit" name="sub">
+            <input type="reset" name="res">
+            <input type="range" name="" size="40%">ZXC
+        </div>
+    </form>
+</body>
+</html>
