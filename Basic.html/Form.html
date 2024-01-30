@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>form</title>
-    <link
-      rel=" shortcut icon"
-      href="https://th.bing.com/th/id/R.d870869e77d40685348bd554d2fc1357?rik=uNavvJd%2bCoJ%2fzg&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f508da03be4b0d28844ddf21c%2f508ed25fe4b044ecf46dfab1%2f5aa00451e2c48331b497515d%2f1520462360524%2fF.jpg%3fformat%3d1500w&ehk=t0TGC4t%2fcm7N21Q%2biBsz8I8kgoojwsHGbWcIauERWD8%3d&risl=&pid=ImgRaw&r=0"
-      type="img/x-icon"
-    />
-  </head>
+    <title>FORMS</title>
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.d870869e77d40685348bd554d2fc1357?rik=uNavvJd%2bCoJ%2fzg&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f508da03be4b0d28844ddf21c%2f508ed25fe4b044ecf46dfab1%2f5aa00451e2c48331b497515d%2f1520462360524%2fF.jpg%3fformat%3d1500w&ehk=t0TGC4t%2fcm7N21Q%2biBsz8I8kgoojwsHGbWcIauERWD8%3d&risl=&pid=ImgRaw&r=0" type="img/x-icon">
+</head>
 
-  <body>
+<body>
     <h1>Form</h1>
     <forms action="server.js">
       <label>Enter a first name:</label>
@@ -43,5 +40,115 @@
       <input type="checkbox" id="male" name="check" />male
       <input type="checkbox" id="femal" name="check" />femal
     </forms>
-  </body>
+
+    <fieldset>
+        <legend>Forms</legend>
+        <form>
+            <div>
+                <h1>forms</h1>
+                <lable>Enter first name*:</lable>
+                <input type="text" placeholder="enter first name" />
+            </div>
+            <div>
+                <br />
+                <lable>Enter last name:</lable>
+                <input type="text" placeholder="enter last name" />
+                
+
+            </div>
+            
+            <div>
+                <br />
+                <label>Email:</label>
+                <input type="Email" placeholder="Email" name="eamil" />
+            </div>
+            <br />
+            <div>
+                <labl>password:</labl>
+                <input type="password" placeholder="password" name="paw" minlength="8" maxlength="4" /><br />
+                <div><button>sigin in</button></div>
+            </div>
+            <br />
+            <div>
+                <button>submit</button>
+
+                <input type="reset" name="reset" />
+            </div>
+            <div>
+                <h2>radio buttons</h2>
+                <input type="radio" name="gen" id="m" value="male" />
+                <label for="m">male</label>
+                <input type="radio" name="gen" id="f" value="femal" />
+                <label for="f">femal</label>
+            </div>
+            <div>
+                <h2>check box</h2>
+                <input type="checkbox" name=" check" id="f" />
+                <label for="f">femal</label>
+                <input type="checkbox" name="check" id="m" />
+                <label for="m">male</label>
+                <input type="checkbox" name="check" id="h" />
+                <label for="h">html</label>
+                <input type="checkbox" name="check" id="c" />
+                <label for="c">css</label>
+            </div>
+            <div><br>
+                <h2>age:</h2>
+                <label>age</label>
+                <input type="number" name="num" id="num" max="26" min="40">
+            </div>
+            <div>
+                <h2>droupdown</h2>
+                <select name="citys" id="city">
+                    <option value="ongole"></option>
+                    <option value="ongole">ongole</option>
+                    <option value="ongole">vijayawada</option>
+                    <option value="ongole">nellore</option>
+                    <option value="ongole">kanigri</option>
+                    <option value="ongole">podhli</option>
+                </select>
+            </div>
+            <div><br>
+                <h2>text area:</h2>
+                <textarea placeholder="textarea"></textarea>
+            </div>
+            <div>
+                <h2>data list</h2>
+                <label for="frv">Favorit:</label>
+                <input type="text" name="colours" id="frv" list="my data">
+                <datalist id="my data">
+                    <optgroup lable="colours">colours</optgroup>
+                        <option value="blue">blue</option>
+                        <option value="red">red</option>
+                        <option value="green">green</option>
+                        <option value="white">white</option>
+                    
+                    <optgroup label="vechile"></optgroup>
+                        <option value="hero">hero</option>
+                        <option value="palsure">palsure</option>
+                        <option value="ktm">ktm</option>
+                        <option value="glammer">glammer</option>
+                    
+                    <optgroup  label="mobiles">moblies</optgroup>
+                        <option value="vivo">vivo</option>
+                        <option value="oppo">oppo</option>
+                        <option value="samsung">samsung</option>
+                    
+                    <optgroup>
+                        <option value="banna">banna</option>
+                        <option value="apple">apple</option>
+                        <option value="carrot">carrot</option>
+                    
+
+
+
+
+
+
+                </datalist>
+            </div>
+        </form>
+    </fieldset>
+</body>
+
 </html>
