@@ -1,0 +1,29 @@
+.more{
+  background-color: aquamarine;
+  border:1px solid black;
+  height: 250px;
+  margin-top: 10px;
+}
+
+  
+/* .container{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  align-items: center;
+  padding: 10px;
+} */
+.row{
+  display: flex;
+  flex-direction: row;
+  margin:10px;
+ 
+  
+
+}
+.ram{
+  
+  border: 1px solid black;
+ padding: 20px;
+
+}
