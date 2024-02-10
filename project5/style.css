@@ -1,0 +1,85 @@
+.container{
+    border: 1px solid black ;
+    height: 45rem;
+    background-color: black;
+    text-align: center;
+}
+.main{
+    background-color: hsl(0, 0%, 20%);
+    height: 360px;
+    width: 230px;
+    margin: auto;
+    margin-top:12rem;
+    padding: 20px;
+    border-radius: 7px;
+    color: hsl(0, 0%, 100%);
+
+
+}
+.p{
+    font-size: 14px;
+    margin-top: -5px;
+}
+.one{
+    color: rgb(167, 244, 14);
+}
+.heading{
+    margin-top: -2px;   
+    color: hsl(0, 0%, 100%);
+    font-size: medium;
+    font-weight: 700px;
+ 
+
+}
+.avathar{
+    border-radius: 100px;
+    margin-left: 0px;
+    margin-top: 25px;
+}
+.git-hub{
+    flex-direction:column;
+    width:85%;
+    text-align: center;
+    display: flex;
+    margin-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+    
+}
+.git{
+    margin-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:hsl(0, 0%, 12%);
+    border-radius: 7px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    font-size: 10px;
+    color: hsl(0, 0%, 100%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.git1{
+    margin-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 7px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    font-size: 10px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+
+}
+.gthub{
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
