@@ -1,0 +1,147 @@
+:root{
+    --primary:#015ba4;
+   --secondary:#2ab631;
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.baner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url("https://th.bing.com/th/id/OIP.6miSd0fyvp9ImJlDbV51UQHaE7?w=299&h=199&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+    background-size: cover;
+    background-position: center;
+}
+
+.navebar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    border-radius: 290px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.navebar ul li {
+    list-style: none;
+    display: inline;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navebar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navebar ul li:hover:after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+.room{
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: space-evenly;
+background-color: black;
+color: white;
+cursor: pointer;
+
+}
+.heading{
+    color: var(--primary);
+    font-family: sans-serif;
+    margin-left: 30%;
+    cursor: pointer;
+    
+    
+    
+
+}
+footer{
+    background: black;
+    color: red;
+    text-align: center;
+    font-size: medium;
+    font-family: sans-serif;
+    cursor: pointer;
+}
