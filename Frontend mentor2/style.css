@@ -1,0 +1,82 @@
+.container{
+    background-color: hsl(225, 100%, 94%);
+    height: 450px;
+    width: auto;
+    padding:135px;
+    
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500,700,900;
+  font-style: normal;
+  font-size: 16px;
+  
+
+
+}
+.main{
+    background-color: white;
+    height: 505px;
+    width: 25.1%;
+    margin-left: 40%;
+    border-radius: 15px;
+    
+
+    
+    
+   
+}
+.main1{
+    height: 88px;
+    border-radius: 0px 3px ;
+    text-align:center;
+}
+.main1 img{
+    border-radius: 15px 15px 0px 0px;
+}
+
+.contant{
+background-color: hsl(220, 20%, 97%);
+height: 75px;
+width: 260px;
+font-size: smaller;
+margin:0px 28px 0px;
+border-radius: 10px;
+
+
+}
+.img{
+margin-left: -200px;
+padding-top: 10px;
+}
+.divetwo
+{
+    margin: -64px 49px 0px 0px;
+}
+.last{
+}
+.chang{
+    text-align: right;
+    margin: -45px;
+}
+button{
+    background-color:hsl(223, 39%, 57%);
+    margin:20px 28px 0px ;
+    height: 50px;
+    width: 250px;
+    border-radius: 15px;
+color: white;
+border: 1px ;
+
+    
+
+}
+p2{
+    color: rgb(160, 158, 158);
+}
+h3{
+    color: rgb(41, 41, 41);
+}
+p4{
+    color: rgb(41, 41, 41); 
+    padding-top: 5px;
+}

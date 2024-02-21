@@ -1,0 +1,41 @@
+.container{
+    
+    border: 1px solid black ;
+    width: auto;
+    height: 45rem;
+    background-color: hsl(233, 47%, 7%);
+}
+.main{
+    border-radius: 5px;
+    width: 58%;
+    height:21.3rem;
+    margin-left: 22rem;
+    margin-top: 13rem;
+    background-color:hsl(244, 38%, 16%) ;
+    display: flex;
+
+}
+.left{
+    margin-right: 30px;
+    width: 50%;
+    margin-left: 35px;
+    color: white;
+    padding: 20px;
+
+}
+span{
+    color: blueviolet;
+}
+.middle{
+    display: flex;
+    gap:45px;
+}
+.head{
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.sub{
+    font-family: sans-serif;
+    font-size: 13px;
+    
+}
