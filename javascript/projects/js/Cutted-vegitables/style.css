@@ -1,0 +1,80 @@
+* body {
+
+    width: auto;
+    background-color: black;
+    color: white;
+
+
+}
+
+.nav {
+
+    height: 56px;
+    margin: 10px 4px 0px 4px;
+    background-color: rgb(88, 65, 30);
+
+
+
+
+
+}
+
+.heading {
+    margin: 0px;
+    font-family: sans-serif;
+    font-style: italic;
+
+}
+.socv{
+    color: rgb(47, 147, 147);
+}
+
+.logo {
+    text-align: end;
+    margin: -32px 60px 0px 0px;
+    background-color: rgb(88, 65, 30);
+}
+
+h2 {
+    margin: -44px
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#loopData {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.loopData {
+    box-shadow: 5px 5px 5px black;
+    padding: 20px;
+}
+
+.loopData {
+    height: 200px;
+    width: 200px;
+}
+
+.loopData img {
+    height: 200px;
+    width: 200px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.text {
+    text-align: center;
+}
+
+.another {
+    height: 50px;
+    background-color: rgb(37, 43, 49);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2px;
+  
+}

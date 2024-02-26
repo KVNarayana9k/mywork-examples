@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    background-color: black;
+    
+    
+}
+#Couching{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+   }
+.couch{
+    
+    padding: 0px;
+
+}
+.couch img{
+    height:200px;
+    width:100%;
+   
+    
+    }
+#Couching div{
+    height: 500px;
+    
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgb(69, 107, 156);
+    color: white;
+    font-family: sans-serif;
+    align-items: center;
+
+}
+h1{
+    color: rgb(40, 40, 154);
+    text-align: center;
+}
+span{
+    color: brown;
+    
+}
