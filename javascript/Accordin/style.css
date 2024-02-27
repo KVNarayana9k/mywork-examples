@@ -1,0 +1,114 @@
+/* Add your css styles here */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(30, 158, 41);
+    
+
+    
+}
+h1{
+    color: antiquewhite;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.title {
+    text-align: center;
+}
+.accordion.activeElem .description,
+.accordion.activeElem .title-section .collapse-icon
+{
+    display: block;
+}
+.accordion.activeElem .title-section .expand-icon{
+    display: none;
+}
+
+.accordion-container {
+    height: auto;
+    min-width: 50vw;
+    max-width: auto;
+    border-radius: 4px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px rgb(29, 76, 129);
+    color: white;
+    font-family: monospace;
+    font-size: large;
+}
+
+.accordion-title {
+    padding: 5px 10px;
+    border-bottom: 1px solid lightgray;
+    font-size: 1.5em;
+    color: darkgray;
+}
+
+.multi-select {
+    position: absolute;
+    display: inline-block;
+    min-width: 50vw;
+    max-width: auto;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: right;
+}
+
+.accordion {
+    position: relative;
+}
+
+.accordion .title-section {
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.accordion .title-section .title {
+    display: inline-block;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+.accordion .title-section .expand-icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('../../assets/icons/down-icon.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.accordion .title-section .collapse-icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('../../assets/icons/up-icon.jpg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: none;
+}
+
+.accordion .description {
+    text-align: left;
+    padding: 5px 10px;
+    border-bottom: 1px solid lightgray;
+    display: none;
+}
