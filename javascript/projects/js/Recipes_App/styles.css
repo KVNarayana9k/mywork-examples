@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    width: 90%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.4rem;
+    padding: 2rem;
+    
+}
+.grid-item img{
+    height: 250px;
+    box-shadow:5px 5px 5px rgb(157, 157, 69);
+
+
+
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:  rgb(140, 116, 85);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    max-width: 80%;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .popup-content {
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  
+  button {
+    background-color: #db142894;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin-top: 10px; */
+    margin-inline: 10px;
+  }
+  
+  button:hover {
+    background-color: #b31638;
+  }
+  
+  .grid-item {
+    cursor: pointer;
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+/* Header container styling */
+.search-container {
+    margin-inline: 2rem;
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+  }
+  
+  .search-container:hover {
+    background-color: #4a6c8f;
+  }
+  
+  /* Search input styling */
+  #searchInput {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  /* Select styling */
+  #cuisineSelect {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  /* Button styling */
+  button {
+    background-color: #79c284;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color:rgb(234, 64, 64);
+  }
+  
+    /* Media queries */
+@media screen and (max-width: 768px) {
+  
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .search-container {
+      flex-direction: row;
+      align-items: stretch;
+      margin-inline:10px
+    }
+  
+    #searchInput {
+      margin-bottom: 10px;
+    }
+    button{
+        margin: 5px;
+    }
+    #cuisineSelect {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .search-container {
+        display: block;
+        margin-inline:10px
+      }
+        .grid-container {
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+      #searchInput {
+        margin: 0px;
+      }
+      button{
+        width: 45%;
+      }
+      .buttons{
+        display: flex;
+        gap: 1%;
+      }
+  }
