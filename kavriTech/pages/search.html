@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Metro Route</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+    background:#f5f7fa;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.card{
+    border:none;
+    border-radius:12px;
+}
+
+h2{
+    font-weight:bold;
+}
+
+.btn{
+    border-radius:8px;
+}
+
+#result{
+    animation:fade .5s;
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-primary">
+    <div class="container">
+        <a href="index.html" class="navbar-brand">
+            🚆 Metro Ticket Booking
+        </a>
+    </div>
+</nav>
+
+<div class="container mt-5">
+
+    <div class="card shadow-lg p-4">
+
+        <h2 class="text-center mb-4">Search Metro Route</h2>
+
+        <div class="row">
+
+            <div class="col-md-6 mb-3">
+                <label class="form-label">From Station</label>
+
+                <select class="form-select" id="from">
+                    <option value="">Select Station</option>
+                    <option>Miyapur</option>
+                    <option>JNTU</option>
+                    <option>KPHB</option>
+                    <option>Ameerpet</option>
+                    <option>Begumpet</option>
+                    <option>Secunderabad</option>
+                </select>
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+                <label class="form-label">To Station</label>
+
+                <select class="form-select" id="to">
+                    <option value="">Select Station</option>
+                    <option>Raidurg</option>
+                    <option>Hitech City</option>
+                    <option>Madhapur</option>
+                    <option>Ameerpet</option>
+                    <option>Nampally</option>
+                    <option>LB Nagar</option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6 mb-3">
+
+                <label class="form-label">Travel Date</label>
+
+                <input type="date" class="form-control" id="date">
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+                <label class="form-label">Passengers</label>
+
+                <input type="number" class="form-control"
+                       value="1"
+                       min="1"
+                       id="passengers">
+
+            </div>
+
+        </div>
+
+        <button class="btn btn-primary w-100"
+                onclick="searchRoute()">
+            Search Route
+        </button>
+
+    </div>
+
+    <div id="result" class="mt-4"></div>
+
+</div>
+
+<script src="js/search.js"></script>
+
+</body>
+<script>
+    function searchRoute() {
+
+    let from = document.getElementById("from").value;
+    let to = document.getElementById("to").value;
+    let date = document.getElementById("date").value;
+    let passengers = document.getElementById("passengers").value;
+
+    if (from == "" || to == "" || date == "") {
+
+        alert("Please fill all fields.");
+
+        return;
+    }
+
+    if (from == to) {
+
+        alert("From and To stations cannot be same.");
+
+        return;
+    }
+
+    let fare = passengers * 40;
+
+    document.getElementById("result").innerHTML = `
+
+<div class="card shadow p-4">
+
+<h3 class="text-success">Route Found</h3>
+
+<hr>
+
+<p><strong>From :</strong> ${from}</p>
+
+<p><strong>To :</strong> ${to}</p>
+
+<p><strong>Date :</strong> ${date}</p>
+
+<p><strong>Passengers :</strong> ${passengers}</p>
+
+<p><strong>Fare :</strong> ₹${fare}</p>
+
+<a href="booking.html"
+class="btn btn-success">
+Book Ticket
+</a>
+
+</div>
+
+`;
+
+    localStorage.setItem("from", from);
+    localStorage.setItem("to", to);
+    localStorage.setItem("date", date);
+    localStorage.setItem("passengers", passengers);
+    localStorage.setItem("fare", fare);
+
+}
+</script>
+</html>
